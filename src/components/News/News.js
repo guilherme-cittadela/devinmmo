@@ -13,10 +13,8 @@ export const News = () =>{
         fetch(url, options)
           .then((response) => response.json())
           .then((result) => {
-              console.log(result)
             const mapResult = newsObject(result)
             setNews(mapResult)
-            console.log(newsList)
           })
       })
       if(newsList === null) return (
