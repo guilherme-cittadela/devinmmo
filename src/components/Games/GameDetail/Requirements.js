@@ -1,4 +1,4 @@
-import { Details, Description, Thumbnail, Title } from "./Requirements-styles"
+import { Details, Description, Thumbnail } from "./Requirements-styles"
 
 export const Requirements= ({game}) =>{
     return(
