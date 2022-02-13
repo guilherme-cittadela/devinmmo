@@ -70,7 +70,7 @@ export const GameDetail = () =>{
         </div>
       </Container>
       <Footer/>
-
+      
       </>
   )
 }
