@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/devinmmo/static/js/main.24ad3730.js",
+    "static/js/787.95b1d46d.chunk.js": "/devinmmo/static/js/787.95b1d46d.chunk.js",
+    "static/media/logo.png": "/devinmmo/static/media/logo.839351ecb0142482d566.png",
+    "index.html": "/devinmmo/index.html",
+    "main.24ad3730.js.map": "/devinmmo/static/js/main.24ad3730.js.map",
+    "787.95b1d46d.chunk.js.map": "/devinmmo/static/js/787.95b1d46d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.24ad3730.js"
+  ]
+}
