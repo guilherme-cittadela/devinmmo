@@ -3,8 +3,8 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
     display:flex;
-    flex-direction:row;
-    margin: 50px 16px 100px 16px;
+    flex-direction:column;
+    margin: 100px 16px 100px 16px;
     padding: 16px;
     border-radius:10px;
     background-color:#714955;
@@ -17,6 +17,7 @@ export const Slides = styled.div`
     border-radius: 10px;
     width: 100%;
     background-color:#94DDBC;
+    margin-top:150px;
 `
 
 export const Images = styled.img`

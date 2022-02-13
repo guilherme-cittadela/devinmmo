@@ -14,7 +14,7 @@ export const Head = () => {
                 <Button src="/games" content = "Games" target="_self"/>
             </div>
             </nav>
-        <Logo src={require('../../Images/logo.png')} alt='Oi'/>
+        <Logo src={require('../../images/logo.png')} alt='Oi'/>
         </NavUp>
         </>
 

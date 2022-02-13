@@ -26,3 +26,24 @@ export const Input = styled.input`
         background: #8ECCA7;
     }
 `
+
+export const TextArea = styled.input`
+    border:none;
+    display: block;
+    width: 100%;
+    height: 300px;
+    font-size: 1rem;
+    padding: 16px;
+    border-radius: 10px;
+    color: #714955 ;
+    background: #A0ECD0;
+    transition: 0.1s;
+    box-shadow: 2px 2px #7B886B;
+
+    &:focus,
+    &:hover {
+        outline: none;
+        background: #8ECCA7;
+}
+
+`

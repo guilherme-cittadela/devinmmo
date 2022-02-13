@@ -4,9 +4,10 @@ import { useParams } from "react-router"
 import { API } from "../../../services/Api"
 import { Footer } from "../../Footer/Footer"
 import { Head } from "../../Head/Head"
-import { Form } from "../../Form/Form"
+import { Forms } from "../../Form/Form"
 import { Container, Slides, Images, Nav } from './GameDetail-styles.js'
 import { Requirements } from "./Requirements"
+import { FormBox } from "../../Form/Form-styles"
 
 
 export const GameDetail = () =>{
@@ -15,7 +16,6 @@ export const GameDetail = () =>{
   const[img, setImg] = useState(0)
   const { gameId } = useParams()
 
-  console.log(gameId)
   useEffect(()=>{
     const {url, options} = API(`game?id=${gameId}`)
 
@@ -68,8 +68,10 @@ export const GameDetail = () =>{
             </div>
           </Slides>
         </div>
+      <Forms />
       </Container>
       <Footer/>
+      
       
       </>
   )

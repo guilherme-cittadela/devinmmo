@@ -11,6 +11,8 @@ export const GlobalStyle = createGlobalStyle`
   text-decoration: none;
   color: #714955;
 
+
+
 }
 
 button{
