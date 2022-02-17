@@ -17,7 +17,7 @@ export const Requirements= ({game}) =>{
                 <p><b>Graphics cards:</b> {game.requirements.graphics}</p>
                 <p><b>Storage:</b> {game.requirements.storage}</p> <br/>
                 <Description>
-                    <p>{game.description}</p><br/>
+                    <p>{game.description}</p><br/> 
                 </Description>
                 <a href={game.site} target="_blank" ><b>Oficial Site</b></a>
             </div>

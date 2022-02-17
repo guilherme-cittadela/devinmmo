@@ -18,7 +18,7 @@ export const GameList = () =>{
             setGame(mapResult)
 
           })
-      })
+      },[])
 
       if(gameList === null) return (
         <>

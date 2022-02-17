@@ -16,7 +16,7 @@ export const News = () =>{
             const mapResult = newsObject(result)
             setNews(mapResult)
           })
-      })
+      },[])
       if(newsList === null) return (
         <>
         <Head/>

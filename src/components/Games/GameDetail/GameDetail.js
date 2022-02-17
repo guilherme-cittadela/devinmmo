@@ -7,7 +7,6 @@ import { Head } from "../../Head/Head"
 import { Forms } from "../../Form/Form"
 import { Container, Slides, Images, Nav } from './GameDetail-styles.js'
 import { Requirements } from "./Requirements"
-import { FormBox } from "../../Form/Form-styles"
 
 
 export const GameDetail = () =>{
@@ -26,7 +25,7 @@ export const GameDetail = () =>{
         setGameDetail(mapResult)
         setMaxImg(gameDetail.screenshots.length)
       })
-  })
+  },[])
   
   const handleNextImage = async () =>{
     if(img < maximumImg -1 ) setImg(img+1)
