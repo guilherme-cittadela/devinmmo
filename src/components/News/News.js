@@ -7,6 +7,8 @@ import { CardNews } from './CardNews/CardNews'
 
 export const News = () =>{
     const [newsList, setNews] = useState([])
+    const [searchTerm, setSearchTerm] = useState('')
+    const [filtredNews, setFiltredNews] = useState([])
 
     useEffect(()=>{
         const {url, options} = API("latestnews")
@@ -15,8 +17,14 @@ export const News = () =>{
           .then((result) => {
             const mapResult = newsObject(result)
             setNews(mapResult)
+            setFiltredNews(mapResult)
           })
       },[])
+
+      useEffect(() => {
+        setFiltredNews(searchFilter(newsList, searchTerm))
+      },[searchTerm])
+
       if(newsList === null) return (
         <>
         <Head/>
@@ -29,11 +37,23 @@ export const News = () =>{
           <CardGrid>
             <div>
                 <Input
+                onChange={(event) =>{
+                  setSearchTerm(event.target.value)
+                }}
                 type="text" 
                 placeholder="Search a news..."/>
-                <div >
-                    {newsList.map((news) => <CardNews news={news}/>)}
-                </div>
+                
+                {filtredNews.length ===0 ? 
+                <p style={{
+                textAlign: 'center', 
+                color: '#94DDBC',
+                padding: 16, 
+                fontWeight: 'bold'}}>No news found</p> :
+                
+              <div >
+                {filtredNews.map((news) => <CardNews news={news}/>)}
+              </div>}
+
             </div>
             </CardGrid>
           <Footer/>
@@ -51,3 +71,11 @@ const newsObject = (newsList) =>{
       url: news.article_url,
     }})
   } 
+
+export const searchFilter = (list, term) => {
+  return list.filter((item) => {
+    return new RegExp(term, "ig").test(item.title);
+  });
+};
+  
+

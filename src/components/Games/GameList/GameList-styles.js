@@ -6,12 +6,13 @@ export const CardGrid = styled.div`
     background-color: #714955;
     margin:32px;
     padding: 32px;
+    min-height: 100vh
 `
 
 export const Input = styled.input`
     border:none;
     display: block;
-    width: 100%;
+    width: 500px;
     font-size: 1rem;
     padding: 16px;
     border-radius: 10px;
