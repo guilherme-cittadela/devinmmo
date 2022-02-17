@@ -1,6 +1,8 @@
 #DEV IN MMO 
 
 (em desenvolvimento)
+Para a visualização acesse: https://reverent-mccarthy-f27183.netlify.app/ 
+
 Projeto final do módulo 1 do curso DevInHouse, oferecido pelo Senai em parceria com a Softplan.
 
 Neste projeto o objetivo foi utilizar todo conhecimento obtido no primeiro módulo, onde estudei conceitos de HTML, CSS, JS e React,para criar uma aplicação sobre Games MMO, em React, consumindo uma API (https://rapidapi.com/digiwalls/api/mmo-games/), seguindo os critérios estabelecidos pelos professores. 
