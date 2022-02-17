@@ -1,3 +1,14 @@
+#DEV IN MMO 
+
+(em desenvolvimento)
+Projeto final do módulo 1 do curso DevInHouse, oferecido pelo Senai em parceria com a Softplan.
+
+Neste projeto o objetivo foi utilizar todo conhecimento obtido no primeiro módulo, onde estudei conceitos de HTML, CSS, JS e React,para criar uma aplicação sobre Games MMO, em React, consumindo uma API (https://rapidapi.com/digiwalls/api/mmo-games/), seguindo os critérios estabelecidos pelos professores. 
+
+Para visualizar o projeto, clone o repositório e siga os passos abaixo:
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
