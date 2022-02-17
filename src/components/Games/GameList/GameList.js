@@ -50,8 +50,8 @@ export const GameList = () =>{
                 textAlign: 'center', 
                 color: '#94DDBC',
                 padding: 16, 
-                fontWeight: 'bold'}}>No games found :(</p> :
-
+                fontWeight: 'bold'}}>No games found</p> :
+                
               <div >
                 {filtredGames.map((game) => <Cards game={game}/>)}
               </div>}
