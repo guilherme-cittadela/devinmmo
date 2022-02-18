@@ -1,5 +1,6 @@
 import { CardBox, Cover, Title } from "./Card-styles"
-import { Button } from "../../Button/Button"
+import { Link } from "react-router-dom"
+import { Btn } from "../../Button/Button-styles"
 
 export const Cards = ({game}) =>{
     
@@ -17,7 +18,9 @@ export const Cards = ({game}) =>{
           </span>
           
         </div>
-          <Button src={`/games/${game.id}`} content="Ver Mais" target="_blank"/>
+        <Btn>
+          <Link target={"_blank"} to={`/games/${game.id}`}>See more</Link>
+        </Btn>
       </CardBox>
       </>
     )

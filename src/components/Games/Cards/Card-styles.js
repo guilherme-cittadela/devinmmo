@@ -11,6 +11,7 @@ flex-direction: column;
 justify-content: space-around;
 align-items: center;
 text-align: justify;
+border-radius: 10px;
 background-color: #94DDBC;
 box-shadow: 2px 2px #7B886B;
 
@@ -23,4 +24,5 @@ export const Cover = styled.img`
 export const Title = styled.h1`
     text-align:center;
     font-size: 1.2rem;
+    margin:16px;
 `

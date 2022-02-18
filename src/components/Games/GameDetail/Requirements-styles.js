@@ -6,7 +6,7 @@ export const Details = styled.div`
     padding: 8px;
     border-radius:10px;
     background-color:#94DDBC;
-    margin-bottom: 16px;
+    margin: 32px;
 `
 
 export const Description = styled.p`

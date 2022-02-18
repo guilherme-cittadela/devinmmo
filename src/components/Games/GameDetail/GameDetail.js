@@ -7,6 +7,7 @@ import { Head } from "../../Head/Head"
 import { Forms } from "../../Form/Form"
 import { Container, Slides, Images, Nav } from './GameDetail-styles.js'
 import { Requirements } from "./Requirements"
+import { Title } from "../Cards/Card-styles"
 
 
 export const GameDetail = () =>{
@@ -23,10 +24,11 @@ export const GameDetail = () =>{
       .then((result) => {
         const mapResult = gameDetailObject(result)
         setGameDetail(mapResult)
-        setMaxImg(gameDetail.screenshots.length)
+        setMaxImg(mapResult.screenshots.length)
       })
   },[])
   
+
   const handleNextImage = async () =>{
     if(img < maximumImg -1 ) setImg(img+1)
     
@@ -47,7 +49,8 @@ export const GameDetail = () =>{
       <>
       <Head/>
       <Container>
-        <div className="detail-container">
+        <Title>{gameDetail.title} Details</Title>
+        <div>
           <div>
             <Requirements game={gameDetail}/>
           </div>

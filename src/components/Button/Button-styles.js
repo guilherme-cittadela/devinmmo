@@ -9,6 +9,7 @@ export const Btn = styled.button`
     border-radius: 5px;
     transition: 400ms;
     background-color: #88BB92;
+    margin: 16px;
     &:hover{
         background-color: #7B886B;
         color: #352227;

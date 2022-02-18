@@ -3,10 +3,12 @@ import styled from "styled-components";
 export const CardGrid = styled.div`
     display:flex;
     justify-content: center;
-    background-color: #714955;
     margin:32px;
     padding: 32px;
-    min-height: 100vh
+    min-height: 100vh;
+    border-radius: 10px;
+    border: solid 2px #714955
+
 `
 
 export const Input = styled.input`

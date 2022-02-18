@@ -31,8 +31,9 @@ export const GameList = () =>{
       if(gameList === null) return (
         <>
         <Head/>
-      <p>Wait...</p>
-      <Footer/></>)
+          <p>Wait...</p>
+        <Footer/>
+        </>)
 
       return(
         <>

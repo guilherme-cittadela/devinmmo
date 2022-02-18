@@ -4,6 +4,7 @@ import { Footer } from '../Footer/Footer'
 import { API } from '../../services/Api'
 import { CardGrid, Input } from '../Games/GameList/GameList-styles'
 import { CardNews } from './CardNews/CardNews'
+import { Title } from '../Games/Cards/Card-styles'
 
 export const News = () =>{
     const [newsList, setNews] = useState([])
@@ -36,6 +37,7 @@ export const News = () =>{
           <Head/>
           <CardGrid>
             <div>
+              <Title>MMO News</Title>
                 <Input
                 onChange={(event) =>{
                   setSearchTerm(event.target.value)

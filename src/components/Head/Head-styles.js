@@ -9,9 +9,9 @@ export const NavUp = styled.nav`{
     left: 0;
     right: 0;
     padding: 6px;
-    background-color:#70565e;
-    box-shadow: 10px 10px #714955;
-    margin:16px 16px 16px 16px ;
+    margin:16px 16px 16px 16px;
+    border-radius: 10px;
+    border:solid 2px #70565e;
     
 }`
 

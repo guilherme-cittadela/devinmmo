@@ -1,5 +1,7 @@
 import { NavUp, Logo } from "./Head-styles"
 import { Button } from "../Button/Button"
+import { Link } from 'react-router-dom'
+import { Btn } from "../Button/Button-styles"
 
 export const Head = () => {
     return (
@@ -8,10 +10,12 @@ export const Head = () => {
 
             <nav>
                <div>
-                
-                
-                <Button src="/" content = "News" target="_self"/>
-                <Button src="/games" content = "Games" target="_self"/>
+                <Btn>
+                    <Link to="/">News</Link>
+                </Btn>
+                <Btn>
+                    <Link to="games">Games</Link> 
+                </Btn>
             </div>
             </nav>
         <Logo src={require('../../images/logo.png')} alt='Oi'/>
