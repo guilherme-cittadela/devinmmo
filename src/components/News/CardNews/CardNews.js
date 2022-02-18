@@ -10,7 +10,7 @@ export const CardNews = ({news}) =>{
             <Cover src={news.cover}/>
             <Title><h1>{news.title}.</h1> </Title>
             <Btn>
-              <Link to={news.url}>Read</Link>
+              <a href={news.url} target="_blank" ><button >Read</button></a>
             </Btn>
             <div>
             </div>

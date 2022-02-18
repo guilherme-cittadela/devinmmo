@@ -10,9 +10,6 @@ export const GlobalStyle = createGlobalStyle`
   font-family: 'Montserrat', sans-serif;
   text-decoration: none;
   color: #714955;
-
-
-
 }
 
 button{

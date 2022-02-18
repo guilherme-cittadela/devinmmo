@@ -31,9 +31,10 @@ export const GameList = () =>{
       if(gameList === null) return (
         <>
         <Head/>
-          <p>Wait...</p>
-        <Footer/>
-        </>)
+        <p style={{
+          textAlign: 'center',
+        }}>Loading...</p>
+      <Footer/></>)
 
       return(
         <>

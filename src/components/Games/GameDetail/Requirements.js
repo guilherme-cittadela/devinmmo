@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+import { Title } from "../Cards/Card-styles"
 import { Details, Description, Thumbnail } from "./Requirements-styles"
 
 export const Requirements= ({game}) =>{
@@ -19,7 +21,7 @@ export const Requirements= ({game}) =>{
                 <Description>
                     <p>{game.description}</p><br/> 
                 </Description>
-                <a href={game.site} target="_blank" ><b>Oficial Site</b></a>
+                <a href={game.site} target="_blank" ><Title>Oficial Site</Title></a>
             </div>
             <div>
                 <Thumbnail src={game.thumbnail}/>

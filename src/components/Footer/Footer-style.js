@@ -13,7 +13,4 @@ export const FooterBox = styled.span`
 
 `
 
-export const Spot = styled.p`
-    font-weight: bold;
 
-`

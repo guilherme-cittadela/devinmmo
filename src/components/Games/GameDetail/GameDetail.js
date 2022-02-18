@@ -42,14 +42,16 @@ export const GameDetail = () =>{
   if(gameDetail===null)return(
     <>
       <Head/>
-        <p>Wait a second...</p>
+      <p style={{
+          textAlign: 'center',
+        }}>Loading...</p>
       <Footer/>
     </>)
   return (
       <>
       <Head/>
       <Container>
-        <Title>{gameDetail.title} Details</Title>
+        <Title>{gameDetail.title} details</Title>
         <div>
           <div>
             <Requirements game={gameDetail}/>
