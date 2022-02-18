@@ -5,8 +5,8 @@ export const Details = styled.div`
     text-align: left;
     padding: 8px;
     border-radius:10px;
-    background-color:#94DDBC;
-    margin: 32px;
+    border: solid 2px #94DDBC;
+    margin: 16px;
 `
 
 export const Description = styled.p`

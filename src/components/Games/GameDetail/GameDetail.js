@@ -59,6 +59,7 @@ export const GameDetail = () =>{
 
           <Slides>
             <div>
+              <Title>Screenshots</Title>
               <Nav>
                 <div>
                   <button onClick={handlePreviousImage}>Previous</button>
@@ -67,7 +68,7 @@ export const GameDetail = () =>{
                   <button onClick={handleNextImage}>Next</button>
                 </div>
               </Nav>
-              <p>Screenshot {img+1} of {maximumImg}</p>
+              <p>{img+1} of {maximumImg}</p>
               <Images src={gameDetail.screenshots[img].screenshot}/>
             </div>
           </Slides>

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const NavUp = styled.nav`{
-    height:100px;
+    height:150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,7 +9,7 @@ export const NavUp = styled.nav`{
     left: 0;
     right: 0;
     padding: 6px;
-    margin:16px 16px 16px 16px;
+    margin: 32px;
     border-radius: 10px;
     border:solid 2px #70565e;
     
@@ -17,5 +17,6 @@ export const NavUp = styled.nav`{
 
 export const Logo = styled.img`
     width: 80px;
+    align-self:center;
 `
 

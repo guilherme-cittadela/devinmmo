@@ -16,7 +16,7 @@ export const Slides = styled.div`
     padding: 16px;
     border-radius: 10px;
     width: 100%;
-    background-color:#94DDBC;
+    border: solid 2px #94DDBC;
     margin-top:150px;
 `
 
@@ -24,6 +24,7 @@ export const Images = styled.img`
     width:100%;
     box-shadow:5px 5px 1px rgb(128, 128, 128);
     border-radius:5px;
+    margin:8px;
 `
 export const Nav = styled.div`
     display:flex;

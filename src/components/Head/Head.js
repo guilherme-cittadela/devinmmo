@@ -1,7 +1,7 @@
 import { NavUp, Logo } from "./Head-styles"
-import { Button } from "../Button/Button"
 import { Link } from 'react-router-dom'
 import { Btn } from "../Button/Button-styles"
+import { Title } from "../Games/Cards/Card-styles"
 
 export const Head = () => {
     return (
@@ -18,7 +18,10 @@ export const Head = () => {
                 </Btn>
             </div>
             </nav>
-        <Logo src={require('../../images/logo.png')} alt='Oi'/>
+        <div style={{display: 'flex', flexDirection: 'column' , justifyContent: 'center', margin: 16}}>
+            <Logo src={require('../../images/logo.png')} alt='Oi'/>
+            <Title>Dev In MMO</Title>
+        </div>
         </NavUp>
         </>
 

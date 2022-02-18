@@ -23,6 +23,5 @@ export const Cover = styled.img`
 `
 export const Title = styled.h1`
     text-align:center;
-    font-size: 1.2rem;
-    margin:16px;
+    margin:8px;
 `

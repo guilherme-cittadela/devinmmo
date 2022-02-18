@@ -9,8 +9,8 @@ export const FormInputs = styled.div`
 
 export const FormBox = styled.div`
     border-radius:10px;
+    border: solid 2px #94DDBC;
     margin:120px 300px 120px 300px;
     padding:16px;
     text-align: center;
-    background-color: #94DDBC;
 `
