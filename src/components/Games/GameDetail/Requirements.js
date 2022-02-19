@@ -21,7 +21,9 @@ export const Requirements= ({game}) =>{
                 <Description>
                     <p>{game.description}</p><br/> 
                 </Description>
-                <a href={game.site} target="_blank" ><Title>Oficial Site</Title></a>
+                 
+                
+                    <a  href={game.site} target="_blank" ><h1 >Oficial Site</h1></a>
             </div>
             <div>
                 <Thumbnail src={game.thumbnail}/>

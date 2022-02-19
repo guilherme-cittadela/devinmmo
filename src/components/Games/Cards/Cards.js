@@ -7,7 +7,7 @@ export const Cards = ({game}) =>{
     return(
       <>
       <CardBox>
-        <Title><h1>{game.title}</h1> </Title>
+        <Title>{game.title} </Title>
         <div>
           <Cover src={game.thumbnail}/>
           <div>

@@ -8,7 +8,7 @@ export const CardNews = ({news}) =>{
       <>
         <CardBox>
             <Cover src={news.cover}/>
-            <Title><h1>{news.title}.</h1> </Title>
+            <Title>{news.title}. </Title>
             <Btn>
               <a href={news.url} target="_blank" ><button >Read</button></a>
             </Btn>
