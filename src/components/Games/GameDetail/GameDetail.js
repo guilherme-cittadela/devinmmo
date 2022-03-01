@@ -2,8 +2,6 @@ import React  from "react"
 import { useState, useEffect } from "react"
 import { useParams } from "react-router"
 import { API } from "../../../services/Api"
-import { Footer } from "../../Footer/Footer"
-import { Head } from "../../Head/Head"
 import { Forms } from "../../Form/Form"
 import { Container, Slides, Images, Nav } from './GameDetail-styles.js'
 import { Requirements } from "./Requirements"
@@ -41,15 +39,12 @@ export const GameDetail = () =>{
 
   if(gameDetail===null)return(
     <>
-      <Head/>
       <p style={{
           textAlign: 'center',
         }}>Loading...</p>
-      <Footer/>
     </>)
   return (
       <>
-      <Head/>
       <Container>
         <Title>{gameDetail.title} details</Title>
         <div>
@@ -75,9 +70,6 @@ export const GameDetail = () =>{
         </div>
       <Forms />
       </Container>
-      <Footer/>
-      
-      
       </>
   )
 }

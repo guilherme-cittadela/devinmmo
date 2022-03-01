@@ -7,7 +7,8 @@ export const Container = styled.div`
     margin: 100px 16px 100px 16px;
     padding: 16px;
     border-radius:10px;
-    border: solid 2px #714955;
+    background-color: ${(props) => props.theme.backGroundContainer};   
+    color: ${(props) => props.theme.color};
     text-align:center;
 `
 
@@ -16,7 +17,8 @@ export const Slides = styled.div`
     padding: 16px;
     border-radius: 10px;
     width: 100%;
-    border: solid 2px #94DDBC;
+    background-color: ${(props) => props.theme.backGroundContainerSec};   
+
     margin-top:150px;
 `
 

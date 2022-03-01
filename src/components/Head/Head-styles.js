@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const NavUp = styled.nav`{
+    color: ${(props) => props.theme.color};
     height:150px;
     display: flex;
     justify-content: space-between;
@@ -11,8 +12,7 @@ export const NavUp = styled.nav`{
     padding: 6px;
     margin: 32px;
     border-radius: 10px;
-    border:solid 2px #70565e;
-    
+    background-color: ${(props) => props.theme.backGroundContainerSec}   
 }`
 
 export const Logo = styled.img`

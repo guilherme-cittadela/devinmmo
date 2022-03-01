@@ -12,8 +12,9 @@ justify-content: space-around;
 align-items: center;
 text-align: justify;
 border-radius: 10px;
-background-color: #94DDBC;
-box-shadow: 2px 2px #7B886B;
+color: ${(props) => props.theme.color};
+background-color: ${(props) => props.theme.backGroundContainerSec};
+box-shadow: 2px 2px ${(props) => props.theme.color};
 
 `
 

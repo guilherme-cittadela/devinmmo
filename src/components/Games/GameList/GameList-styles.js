@@ -6,9 +6,9 @@ export const CardGrid = styled.div`
     margin:32px;
     padding: 32px;
     min-height: 100vh;
+    background-color: ${(props) => props.theme.backGroundContainer};
+    color: ${(props) => props.theme.color};
     border-radius: 10px;
-    border: solid 2px #714955
-
 `
 
 export const Input = styled.input`
@@ -18,15 +18,17 @@ export const Input = styled.input`
     font-size: 1rem;
     padding: 16px;
     border-radius: 10px;
-    color: #714955 ;
-    background: #A0ECD0;
+    color: ${(props) => props.theme.color} ;
+    background-color: ${(props) => props.theme.backGroundContainerSec};
     transition: 0.1s;
-    box-shadow: 2px 2px #7B886B;
+    box-shadow: 2px 2px ${(props) => props.theme.color};
+    ;
 
     &:focus,
     &:hover {
         outline: none;
-        background: #8ECCA7;
+        background-color: ${(props) => props.theme.backGround};
+
     }
 `
 

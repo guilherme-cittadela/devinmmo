@@ -7,9 +7,10 @@ export const FooterBox = styled.span`
     min-width: 100%;
     text-align: center;
     padding: 20px;
-    background-color: #A0ECD0;
+    background-color: ${(props) => props.theme.backGround};
     font-weight: 300;
     font-size: 14px;
+    color: ${(props) => props.theme.color};
 
 `
 

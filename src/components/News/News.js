@@ -1,5 +1,4 @@
 import {useState, useEffect} from 'react'
-import { Head } from '../Head/Head'
 import { Footer } from '../Footer/Footer'
 import { API } from '../../services/Api'
 import { CardGrid, Input } from '../Games/GameList/GameList-styles'
@@ -28,13 +27,11 @@ export const News = () =>{
 
       if(newsList === null) return (
         <>
-        <Head/>
         <p>Wait...</p>
         <Footer/>
       </>)
       return(
           <>
-          <Head/>
           <CardGrid>
             <div>
               <Title>MMO News</Title>

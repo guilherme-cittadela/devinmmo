@@ -5,8 +5,10 @@ export const Details = styled.div`
     text-align: left;
     padding: 8px;
     border-radius:10px;
-    border: solid 2px #94DDBC;
+    background-color: ${(props) => props.theme.backGroundContainerSec};
     margin: 16px;
+    color: ${(props) => props.theme.color};
+
 `
 
 export const Description = styled.p`

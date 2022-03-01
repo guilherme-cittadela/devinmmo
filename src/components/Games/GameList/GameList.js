@@ -1,10 +1,8 @@
 import { useState, useEffect } from 'react'
 import { API } from '../../../services/Api'
-import { Cards } from '../Cards/Cards'
-import { Head } from '../../Head/Head'
-import { Footer } from '../../Footer/Footer'
 import { CardGrid, Input } from './GameList-styles'
 import { searchFilter } from '../../News/News'
+import { Cards } from '../Cards/Cards'
 
 
 export const GameList = () =>{
@@ -30,15 +28,13 @@ export const GameList = () =>{
       console.log(filtredGames)
       if(gameList === null) return (
         <>
-        <Head/>
         <p style={{
           textAlign: 'center',
         }}>Loading...</p>
-      <Footer/></>)
+      </>)
 
       return(
         <>
-        <Head/>
           <CardGrid>
             <div>
               <Input
@@ -59,7 +55,6 @@ export const GameList = () =>{
               </div>}
             </div>
           </CardGrid>
-        <Footer/>
         </>
       )
 }

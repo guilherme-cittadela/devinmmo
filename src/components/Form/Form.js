@@ -58,8 +58,8 @@ export const Forms = () => {
                                         <Field 
                                         name="comment" 
                                         placeholder="Comment" 
-                                        type="text-area"
-                                        component={TextArea}
+                                        type="text"
+                                        component={Input}
                                         />
                                     </FormInputs>
 
