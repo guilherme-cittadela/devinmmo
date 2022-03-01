@@ -1,14 +1,13 @@
 import { Formik, Form, Field, ErrorMessage } from 'formik'
 import * as Yup from 'yup'
+import { Btn } from '../Button/Button-styles'
 import { Input, TextArea } from '../Games/GameList/GameList-styles'
 import { FormInputs, FormBox } from './Form-styles'
 
 export const Forms = () => {
     const handleSubmit = (values, {setSubmitting}) => {
-        setTimeout(()=>{
             alert(JSON.stringify(values, null, 2))
             setSubmitting(false)
-        },1500)
     }
 
     const schema = Yup.object().shape({
@@ -64,11 +63,11 @@ export const Forms = () => {
                                     </FormInputs>
 
 
-                                    <button 
+                                    <Btn 
                                     type='submit'
                                     disabled={isSubmitting || !isValid }
-                                    onClick={resetForm}
-                                    >Submit</button>
+                                    onClick={handleSubmit}
+                                    >Submit</Btn>
                                 </Form>
                         )}
                     </Formik>

@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom"
-import { Title } from "../Cards/Card-styles"
+import { NavExternal } from "../../Button/Button-styles"
 import { Details, Description, Thumbnail } from "./Requirements-styles"
 
 export const Requirements= ({game}) =>{
@@ -21,9 +20,7 @@ export const Requirements= ({game}) =>{
                 <Description>
                     <p>{game.description}</p><br/> 
                 </Description>
-                 
-                
-                    <a  href={game.site} target="_blank" ><h1 >Oficial Site</h1></a>
+                <NavExternal  href={game.site} target="_blank" >Oficial Site</NavExternal>
             </div>
             <div>
                 <Thumbnail src={game.thumbnail}/>

@@ -4,7 +4,7 @@ import styled from 'styled-components'
 export const Container = styled.div`
     display:flex;
     flex-direction:column;
-    margin: 100px 16px 100px 16px;
+    margin: 100px 16px 150px 16px;
     padding: 16px;
     border-radius:10px;
     background-color: ${(props) => props.theme.backGroundContainer};   
@@ -23,10 +23,9 @@ export const Slides = styled.div`
 `
 
 export const Images = styled.img`
-    width:100%;
-    box-shadow:5px 5px 1px rgb(128, 128, 128);
+    width:80%;
     border-radius:5px;
-    margin:8px;
+    margin:32px;
 `
 export const Nav = styled.div`
     display:flex;

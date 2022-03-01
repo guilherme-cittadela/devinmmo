@@ -28,7 +28,6 @@ export const News = () =>{
       if(newsList === null) return (
         <>
         <p>Wait...</p>
-        <Footer/>
       </>)
       return(
           <>
@@ -55,7 +54,6 @@ export const News = () =>{
 
             </div>
             </CardGrid>
-          <Footer/>
           </>
       )
 }

@@ -21,7 +21,6 @@ export const Input = styled.input`
     color: ${(props) => props.theme.color} ;
     background-color: ${(props) => props.theme.backGroundContainerSec};
     transition: 0.1s;
-    box-shadow: 2px 2px ${(props) => props.theme.color};
     ;
 
     &:focus,

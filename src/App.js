@@ -7,6 +7,7 @@ import { News } from './components/News/News'
 import { useState } from  'react'
 import { ThemeProvider } from 'styled-components'
 import { Head } from './components/Head/Head'
+import { Footer } from './components/Footer/Footer'
 
 
 
@@ -30,6 +31,7 @@ const App = () => {
           <Route path="/games" element={<GameList/>}/>
           <Route path="/games/:gameId" element={<GameDetail/>}/>
         </Routes>
+        <Footer/>
      </BrowserRouter>
    </ThemeProvider>
    </>

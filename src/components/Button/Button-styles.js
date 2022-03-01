@@ -27,7 +27,7 @@ export const ThemeButton = styled.button`
     font-weight: bold;
     border-radius: 5px;
     transition: 400ms;
-    margin:64px;
+    margin:100px;
     &:hover{
         color: ${(props) => props.theme.colorHover};
 
@@ -65,4 +65,16 @@ export const StyledLink = styled(Link)`
     &:hover{
         background-color: ${(props) => props.theme.backGroundButtonHover};
         color: ${(props) => props.theme.colorHover};
+`
+
+export const NavExternal = styled.a`
+    color: ${(props) => props.theme.color};
+    border:none;
+    cursor:pointer;
+    font-size:32px;
+    font-weight: bold;
+    &:hover{
+        color: ${(props) => props.theme.colorHover};
+        text-decoration: underline;
+
 `

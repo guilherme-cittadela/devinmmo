@@ -6,6 +6,7 @@ import { Forms } from "../../Form/Form"
 import { Container, Slides, Images, Nav } from './GameDetail-styles.js'
 import { Requirements } from "./Requirements"
 import { Title } from "../Cards/Card-styles"
+import { Btn } from "../../Button/Button-styles"
 
 
 export const GameDetail = () =>{
@@ -57,10 +58,10 @@ export const GameDetail = () =>{
               <Title>Screenshots</Title>
               <Nav>
                 <div>
-                  <button onClick={handlePreviousImage}>Previous</button>
+                  <Btn onClick={handlePreviousImage}>Previous</Btn>
                 </div>
                 <div>
-                  <button onClick={handleNextImage}>Next</button>
+                  <Btn onClick={handleNextImage}>Next</Btn>
                 </div>
               </Nav>
               <p>{img+1} of {maximumImg}</p>

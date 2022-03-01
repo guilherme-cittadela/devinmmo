@@ -10,13 +10,9 @@ export const Head = ({theme, themeHandle}) => {
         <NavUp>
             <nav>
                <div>
-                
                     <StyledLink to="/">News</StyledLink>
-                
-                
                     <StyledLink to="games">Games</StyledLink> 
-                
-            </div>
+                </div>
             </nav>
             <div style={{display: 'flex', flexDirection: 'column' , justifyContent: 'center', margin: 16}}>
                 <Logo src={require('../../images/logo.png')} alt='Oi'/>
