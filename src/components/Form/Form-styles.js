@@ -9,7 +9,7 @@ export const FormInputs = styled.div`
 
 export const FormBox = styled.div`
     border-radius:10px;
-    background-color: ${(props) => props.theme.backGround};   
+    background-color: ${(props) => props.theme.backGroundContainerSec};   
     margin:120px 300px 120px 300px;
     padding:16px;
     text-align: center;

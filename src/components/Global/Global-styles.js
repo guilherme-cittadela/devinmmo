@@ -5,7 +5,7 @@ export const lightMode = {
     backGroundContainer : '#F3F4E0',
     backGroundContainerSec : '#CFD0C0',
     backGroundButton: '#FCFC62',
-    backGroundButtonHover: '#969627',
+    backGroundButtonHover: '#d3d370',
     color: '#5B5B5B',
     colorHover: '#969627'
 }

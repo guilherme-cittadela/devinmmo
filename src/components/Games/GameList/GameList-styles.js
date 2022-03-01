@@ -19,14 +19,12 @@ export const Input = styled.input`
     padding: 16px;
     border-radius: 10px;
     color: ${(props) => props.theme.color} ;
-    background-color: ${(props) => props.theme.backGroundContainerSec};
+    background-color: ${(props) => props.theme.backGround};
     transition: 0.1s;
-    ;
-
     &:focus,
     &:hover {
         outline: none;
-        background-color: ${(props) => props.theme.backGround};
+        background-color: ${(props) => props.theme.backGroundContainerSec};
 
     }
 `
