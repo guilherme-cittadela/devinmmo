@@ -1,6 +1,5 @@
 import { NavUp, Logo } from "./Head-styles"
-import { Link } from 'react-router-dom'
-import { Btn, ThemeButton } from "../Button/Button-styles"
+import { Btn, StyledLink, ThemeButton } from "../Button/Button-styles"
 import { Title } from "../Games/Cards/Card-styles"
 import { BsMoonStarsFill, BsFillSunFill } from 'react-icons/bs';
 
@@ -11,12 +10,12 @@ export const Head = ({theme, themeHandle}) => {
         <NavUp>
             <nav>
                <div>
-                <Btn>
-                    <Link to="/">News</Link>
-                </Btn>
-                <Btn>
-                    <Link to="games">Games</Link> 
-                </Btn>
+                
+                    <StyledLink to="/">News</StyledLink>
+                
+                
+                    <StyledLink to="games">Games</StyledLink> 
+                
             </div>
             </nav>
             <div style={{display: 'flex', flexDirection: 'column' , justifyContent: 'center', margin: 16}}>

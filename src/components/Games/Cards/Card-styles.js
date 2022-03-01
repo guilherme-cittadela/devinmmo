@@ -14,15 +14,17 @@ text-align: justify;
 border-radius: 10px;
 color: ${(props) => props.theme.color};
 background-color: ${(props) => props.theme.backGroundContainerSec};
-box-shadow: 2px 2px ${(props) => props.theme.color};
-
 `
 
 export const Cover = styled.img`
     width: 100%;
     border-radius: 30px;
+    margin-bottom: 64px;
 `
 export const Title = styled.h1`
     text-align:center;
     margin:8px;
+`
+export const Span = styled.span`
+    padding:32px;
 `
