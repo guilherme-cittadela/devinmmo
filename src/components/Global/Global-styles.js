@@ -7,7 +7,7 @@ export const lightMode = {
     backGroundButton: '#FCFC62',
     backGroundButtonHover: '#969627',
     color: '#5B5B5B',
-    colorHover: '#FCFC62'
+    colorHover: '#969627'
 }
 
 export const darkMode = {
