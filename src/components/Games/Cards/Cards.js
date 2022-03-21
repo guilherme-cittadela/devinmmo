@@ -3,8 +3,15 @@ import { Link } from "react-router-dom"
 import { StyledLink } from "../../Button/Button-styles"
 
 export const Cards = ({game}) =>{
-    
+    let description = game.description
+
+    if(description.length > 250){
+      description = (game.description.slice(0,200) + '...')
+      console.log(description)
+    }
+
     return(
+      
       <>
       <CardBox>
         <Title>{game.title} </Title>
@@ -14,7 +21,7 @@ export const Cards = ({game}) =>{
             <p>{game.plataform}</p>
           </div>
           <Span>
-            {game.description}
+            {description}
           </Span>
           
         </div>

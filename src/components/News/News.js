@@ -1,7 +1,6 @@
 import {useState, useEffect} from 'react'
-import { Footer } from '../Footer/Footer'
 import { API } from '../../services/Api'
-import { CardGrid, Input } from '../Games/GameList/GameList-styles'
+import { CardGrid, Input, Container } from '../Games/GameList/GameList-styles'
 import { CardNews } from './CardNews/CardNews'
 import { Title } from '../Games/Cards/Card-styles'
 
@@ -31,9 +30,10 @@ export const News = () =>{
       </>)
       return(
           <>
-          <CardGrid>
+          <Container>
             <div>
               <Title>MMO News</Title>
+              
                 <Input
                 onChange={(event) =>{
                   setSearchTerm(event.target.value)
@@ -48,12 +48,12 @@ export const News = () =>{
                 padding: 16, 
                 fontWeight: 'bold'}}>No news found</p> :
                 
-              <div >
+              <CardGrid >
                 {filtredNews.map((news) => <CardNews news={news}/>)}
-              </div>}
+              </CardGrid>}
 
             </div>
-            </CardGrid>
+            </Container>
           </>
       )
 }

@@ -30,6 +30,10 @@ export const ThemeButton = styled.button`
     margin:100px;
     &:hover{
         color: ${(props) => props.theme.colorHover};
+    }
+    @media(max-width:754px ){
+        margin:0;
+    }
 
 `
 

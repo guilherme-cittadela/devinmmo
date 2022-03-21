@@ -29,7 +29,17 @@ export const GlobalStyle = createGlobalStyle`
   text-decoration: none;
   
 }
+:root {
+  font-size:1rem;
 
+  @media (min-width: 768px){
+    font-size: 0.8rem;
+  }
+
+  @media (min-width: 1024px){
+    font-size: 16px;
+  }
+}
 body{
   background-color: ${(props) => props.theme.backGround};
 }

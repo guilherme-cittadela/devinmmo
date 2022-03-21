@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { API } from '../../../services/Api'
-import { CardGrid, Input } from './GameList-styles'
+import { CardGrid, Container, Input } from './GameList-styles'
 import { searchFilter } from '../../News/News'
 import { Cards } from '../Cards/Cards'
 
@@ -35,7 +35,7 @@ export const GameList = () =>{
 
       return(
         <>
-          <CardGrid>
+          <Container>
             <div>
               <Input
               type="text" 
@@ -50,11 +50,11 @@ export const GameList = () =>{
                 padding: 16, 
                 fontWeight: 'bold'}}>No games found</p> :
                 
-              <div >
+              <CardGrid >
                 {filtredGames.map((game) => <Cards game={game}/>)}
-              </div>}
+              </CardGrid>}
             </div>
-          </CardGrid>
+          </Container>
         </>
       )
 }

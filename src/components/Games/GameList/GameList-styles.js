@@ -1,9 +1,28 @@
 import styled from "styled-components";
 
 export const CardGrid = styled.div`
+    display:grid;
+    max-width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    background-color: ${(props) => props.theme.backGroundContainer};
+    color: ${(props) => props.theme.color};
+    border-radius: 10px;
+    @media(max-width: 1200px){
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @media(max-width: 946px){
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media(max-width: 754px){
+        display flex;
+        flex-direction: column;
+    }
+`
+export const Container = styled.div`
     display:flex;
-    justify-content: center;
     margin:32px;
+    max-width: 100%;
     padding: 32px;
     min-height: 100vh;
     background-color: ${(props) => props.theme.backGroundContainer};
@@ -13,8 +32,8 @@ export const CardGrid = styled.div`
 
 export const Input = styled.input`
     border:none;
-    display: block;
-    width: 500px;
+    width: 100%;
+    margin-bottom:32px;
     font-size: 1rem;
     padding: 16px;
     border-radius: 10px;
