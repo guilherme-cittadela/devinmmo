@@ -69,7 +69,7 @@ export const GameDetail = () =>{
             </div>
           </Slides>
         </div>
-      <Forms />
+      {/*<Forms />*/}
       </Container>
       </>
   )

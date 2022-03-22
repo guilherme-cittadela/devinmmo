@@ -10,6 +10,7 @@ export const Container = styled.div`
     background-color: ${(props) => props.theme.backGroundContainer};   
     color: ${(props) => props.theme.color};
     text-align:center;
+
 `
 
 export const Slides = styled.div`
@@ -18,14 +19,12 @@ export const Slides = styled.div`
     border-radius: 10px;
     width: 100%;
     background-color: ${(props) => props.theme.backGroundContainerSec};   
-
     margin-top:150px;
 `
 
 export const Images = styled.img`
-    width:80%;
+    width:100%;
     border-radius:5px;
-    margin:32px;
 `
 export const Nav = styled.div`
     display:flex;
